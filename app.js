@@ -1,7 +1,7 @@
 var soap = require('soap');
 var url = 'http://www.ibanbic.be/IBANBIC.asmx?WSDL';
 
-var args = {Value:'BE77363158886242'}
+var args = {Value:'BE'}
 
 soap.createClient(url,function(err,client){
     client.BBANtoBANKNAME(args,function(err,result){
